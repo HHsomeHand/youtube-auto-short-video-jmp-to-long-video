@@ -13,6 +13,7 @@ export default defineConfig({
         version: "1.0.0",
         author: "hzx",
         license: "MIT",
+        description: "youtube auto short video jmp to long video",
       },
       server: { mountGmApi: true },
     }),
