@@ -10,7 +10,7 @@ export default defineConfig({
         icon: 'https://www.google.com/s2/favicons?sz=64&domain=youtube.com',
         namespace: 'npm/vite-plugin-monkey',
         match: ['https://www.youtube.com/*'],
-        version: "1.1.1",
+        version: "1.1.2",
         author: "hzx",
         license: "MIT",
         description: "youtube auto short video jmp to long video",

@@ -24,8 +24,6 @@ function createMenu() {
 
                 async function processState() {
                     await elmGetter.each(".shortsLockupViewModelHostEndpoint", (el) => {
-                        console.log(el);
-
                         el.href = convertShortsToVideoLink(el.href);
                     })
 
