@@ -33,17 +33,15 @@ function createMenu() {
                     // 因为 shadow DOM 也无法添加 eventListener
                     // 只能用此招化解, 狸猫换太子
                     await elmGetter.each("ytm-shorts-lockup-view-model-v2", (el) => {
-                        let mask = document.createElement("div")
+                        let mask = document.createElement("a")
 
                         mask.className = "mask"
 
                         el.appendChild(mask);
 
-                        mask.addEventListener("click", () => {
-                            const aEl = el.querySelector(`a`)
+                        const aEl = el.querySelector(`a`)
 
-                            location.href = aEl.href;
-                        })
+                        mask.href = aEl.href;
                     })
                 }
 
